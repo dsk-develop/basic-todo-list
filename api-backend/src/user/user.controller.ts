@@ -44,7 +44,6 @@ export class UserController {
       token,
     };
   }
-
   @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
   @UseInterceptors(CacheInterceptor)
